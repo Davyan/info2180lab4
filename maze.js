@@ -1,4 +1,4 @@
-var loser = false;  // whether the user has hit a wall
+var loser = false;  // whether the user gone over boundary
 
 window.onload = function() {
     $("start").onclick = startClick;
@@ -27,8 +27,8 @@ function startClick() {
 
 function overEnd() {
     if(loser) {
-        alert("Sorry, you lost. :[");
+        alert("Sorry, you lost.");
     } else {
-        alert("You win! :]");
+        alert("You win!");
     }
 }
